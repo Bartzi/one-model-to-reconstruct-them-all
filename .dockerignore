@@ -1,0 +1,4 @@
+stylegan_code_finder/logs/**/*
+stylegan_code_finder/logs
+stylegan_code_finder/wandb/**/*
+stylegan_code_finder/wandb
