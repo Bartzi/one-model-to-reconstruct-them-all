@@ -1,5 +1,7 @@
 FROM nvidia/cuda:10.2-devel-ubuntu18.04
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y \
     build-essential \
 	git \
@@ -33,21 +35,21 @@ RUN pip3 --no-cache-dir install --upgrade \
 
 RUN ln -s $(which ${PYTHON}) /usr/local/bin/python
 
-ARG DEBIAN_FRONTEND=noninteractive
-#ARG UNAME=<your name>
-#ARG UID=<your user id>
-#ARG GID=<your group id>
-
 ARG BASE=/app
 RUN mkdir ${BASE}
 RUN mkdir /data
 
-COPY stylegan_code_finder/requirements.txt ${BASE}/requirements.txt
+COPY requirements.txt ${BASE}/requirements.txt
 COPY training_tools ${BASE}/training_tools
 RUN cd ${BASE}/training_tools && pip3 install .
 
 WORKDIR ${BASE}
 RUN pip3 install -r requirements.txt
+
+# you can change these to the values of your user to avoid permission problems
+ARG UNAME=one_model
+ARG UID=1000
+ARG GID=100
 
 RUN groupadd -g $GID -o $UNAME
 RUN useradd -m -u $UID -g $GID -o -s /bin/zsh $UNAME
