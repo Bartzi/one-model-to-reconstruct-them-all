@@ -1,0 +1,37 @@
+{
+	"image_save_iter": 500,
+	"image_display_iter": 500,
+	"display_size": 16,
+	"snapshot_save_iter": 10000,
+	"log_iter": 10,
+	"max_iter": 1000000,
+	"batch_size": 8,
+	"weight_decay": 0.0001,
+	"beta1": 0.5,
+	"beta2": 0.999,
+	"init": "kaiming",
+	"lr": 0.0001,
+	"lr_policy": "step",
+	"step_size": 100000,
+	"gamma": 0.5,
+	"loss_weights": {
+		"reconstruction": 0.1,
+		"discriminator": 1
+	},
+	"regularization": {
+		"d_interval": 16,
+		"r1_weight": 10
+	},
+	"latent_size": 512,
+	"input_dim": 3,
+	"num_workers": 0,
+	"image_size": 256,
+	"config": "configs/autoencoder.yaml",
+	"stylegan_checkpoint": "/home/christian/workspace/pycharm-upload/wpi/stylegan-pytorch/logs/2020-05-08T13:07:44.825280_latent_512_no_mirror/checkpoint/250000.pt",
+	"images": "/mnt/ssd1/christian/wpi/segmentation/generation_with_gan/without_vollard_no_border/images.json",
+	"stylegan_variant": 2,
+	"absolute": false,
+	"device": "cuda",
+	"log_dir": "logs/wpi_only_autoencoder/unet_encoder_lr_shift/2020-05-20T11:19:17.498041",
+	"log_name": "unet_encoder_lr_shift"
+}

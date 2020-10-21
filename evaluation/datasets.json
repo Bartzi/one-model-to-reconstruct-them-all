@@ -1,0 +1,22 @@
+[
+  {
+    "test": "/mnt/ssd1/christian/one_model_to_generate_them_all/lsun_data/church/val_images/images.json",
+    "train": "/mnt/ssd1/christian/one_model_to_generate_them_all/lsun_data/church/train_images/images.json",
+    "name": "lsun_church"
+  },
+  {
+    "test": "/mnt/ssd1/christian/one_model_to_generate_them_all/lsun_data/bedroom/val_images/images.json",
+    "train": "/mnt/ssd1/christian/one_model_to_generate_them_all/lsun_data/bedroom/train_images/images.json",
+    "name": "lsun_bedroom"
+  },
+  {
+    "test": "/mnt/ssd2/christian/one_model_to_generate_them_all/lsun_data/cat/cat_images/val.json",
+    "train": "/mnt/ssd2/christian/one_model_to_generate_them_all/lsun_data/cat/cat_images/train.json",
+    "name": "lsun_cat"
+  },
+  {
+    "test": "/mnt/ssd1/christian/flickr-faces/images1024x1024/val.json",
+    "train": "/mnt/ssd1/christian/flickr-faces/images1024x1024/train.json",
+    "name": "ffhq"
+  }
+]
