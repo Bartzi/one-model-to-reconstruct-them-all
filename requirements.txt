@@ -1,7 +1,7 @@
 kornia==0.3.1
 numpy==1.18.2
 opencv-python-headless==4.2.0.34
-Pillow==7.0.0
+Pillow==8.0.0
 PyYAML==5.3.1
 requests==2.23.0
 scikit-image==0.16.2
