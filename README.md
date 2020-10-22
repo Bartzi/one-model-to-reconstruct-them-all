@@ -1,7 +1,7 @@
 # One Model to Reconstruct them All
 
 This repository contains the code for our Paper "One Model to Reconstruct Them All: A Novel Way to Use the Stochastic Noise in StyleGAN".
-You can read a pre-print of this paper on [Arxiv](TODO).
+You can read a pre-print of this paper on [Arxiv](https://arxiv.org/abs/2010.11113).
 
 In this repository, you can find everything you need for redoing our experiments, we also supply code that implements 
 parts of the ideas introduced in [Image2Stylegan](http://openaccess.thecvf.com/content_ICCV_2019/html/Abdal_Image2StyleGAN_How_to_Embed_Images_Into_the_StyleGAN_Latent_Space_ICCV_2019_paper.html)
@@ -233,7 +233,14 @@ The code is there but the documentation not yet!
 # Citation
 If this code helps you in your research, please cite our paper:
 ```bibtex
-TODO
+@misc{bartz+bethge2020model,
+      title={One Model to Reconstruct Them All: A Novel Way to Use the Stochastic Noise in StyleGAN}, 
+      author={Christian Bartz and Joseph Bethge and Haojin Yang and Christoph Meinel},
+      year={2020},
+      eprint={2010.11113},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 # Questions, PRs
