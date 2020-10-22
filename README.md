@@ -225,6 +225,16 @@ The following options are possible:
 - `-b`, `--bounds`: from which factor to which factor interpolation shall happen.
 - `--generate`: Do not use the encoder of the autoencoder model, but rather only the decoder and examine the results.
 
+## Using our Pre-Trained Models
+
+We also supply pre-trained models for some of our experiments (we do not have the technical capabilities to share all at the same time).
+You can find all models [here](https://bartzi.de/one_model_to_reconstruct_them_all).
+If you want to have the model for a specific experiment, please feel free to open an issue and ask for the model.
+
+## Seeing the Logs of our Train Runs
+
+You can inspect the logs and hyperparameters of all of our train runs, by visiting [Weights and Biases](https://wandb.ai/hpi/One%20Model%20to%20Generate%20them%20All).
+
 ## Redoing Image2Stylegan Experiments
 
 Will be added soon!
