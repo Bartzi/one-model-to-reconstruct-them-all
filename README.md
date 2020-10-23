@@ -11,7 +11,8 @@ and [Image2Stylegan++](http://arxiv.org/abs/1911.11544).
 
 For setting the system up, you'll need to meet the following requirements:
 1. A system with CUDA capable GPU (should be able to work with CUDA-10.2)
-1. That's it =)
+1. Preferably not Windows (the docker container might work, though)
+1. That's it =) (I hope. if I'm wrong, please open an issue)
 
 Before starting the installation, please clone the repository and its submodule:
 1. `git clone https://github.com/Bartzi/one-model-to-reconstruct-them-all.git`
