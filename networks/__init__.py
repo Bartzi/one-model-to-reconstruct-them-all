@@ -324,7 +324,7 @@ def get_stylegan_2_based_autoencoder(args: argparse.Namespace) -> Callable:
     try:
         from networks import get_stylegan2_autoencoder
     except ImportError:
-        raise RuntimeError("stylegan 2 not supported on fsoc lab")
+        raise RuntimeError("stylegan 2 not supported if ninja is not installed/can not be found on your system")
 
     if getattr(args, 'two_stem', False):
         update_latent = args.disable_update_for in ['noise', 'none']
